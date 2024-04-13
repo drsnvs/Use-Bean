@@ -11,20 +11,26 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JSP Page</title>
     <style>
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f2f2f2;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .container {
             max-width: 400px;
-            margin: 50px auto;
+            margin: 0 auto;
             background-color: #fff;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            text-align: center;
         }
 
         input[type="text"], input[type="radio"], button[type="submit"] {
@@ -32,10 +38,13 @@
             margin: 5px 0;
             width: 100%;
             box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #ccc;
         }
 
         input[type="radio"] {
             margin-right: 10px;
+            width: auto;
         }
 
         button[type="submit"] {
@@ -44,6 +53,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            padding: 10px 20px;
         }
 
         button[type="submit"]:hover {
@@ -53,11 +63,13 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
         }
 
         td {
             padding: 10px;
             text-align: left;
+            border-bottom: 1px solid #ccc;
         }
 
         tr:nth-child(even) {
@@ -91,7 +103,7 @@
                 <td><input type="text" name="number2"></td>
             </tr>
             <tr>
-                <td><button type="submit">Submit</button></td>
+                <td colspan="2"><button type="submit">Submit</button></td>
             </tr>
         </table>
     </form>
